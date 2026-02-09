@@ -1,0 +1,82 @@
+:root {
+    --bg: #0b0d11;
+    --card-bg: #161a1f;
+    --primary: #3b82f6;
+    --accent: #8b5cf6;
+    --text: #ffffff;
+    --text-muted: #94a3b8;
+    --glass: rgba(255, 255, 255, 0.03);
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+/* Header & Nav */
+.site-header { position: fixed; width: 100%; top: 20px; z-index: 1000; }
+.nav.glass {
+    background: rgba(11, 13, 17, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+}
+
+.brand { display: flex; align-items: center; text-decoration: none; color: white; gap: 10px; }
+.logo-placeholder { background: var(--primary); width: 40px; height: 40px; border-radius: 8px; display: grid; place-items: center; font-weight: bold; }
+.menu a { color: var(--text-muted); text-decoration: none; margin-left: 1.5rem; font-size: 0.9rem; transition: 0.3s; }
+.menu a:hover { color: var(--primary); }
+
+/* Hero Section */
+.hero { padding: 160px 0 100px; background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.15), transparent); }
+.hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; }
+.eyebrow { color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; }
+.title { font-family: 'Space Grotesk', sans-serif; font-size: 4rem; line-height: 1.1; margin-bottom: 1.5rem; }
+.grad { background: linear-gradient(90deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.lead { color: var(--text-muted); font-size: 1.2rem; margin-bottom: 2rem; }
+
+/* Buttons */
+.btn { padding: 0.8rem 1.5rem; border-radius: 12px; text-decoration: none; font-weight: 600; transition: 0.3s; display: inline-block; }
+.btn.primary { background: var(--primary); color: white; border: none; }
+.btn.ghost { border: 1px solid var(--border); color: white; margin-left: 10px; }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+
+/* Section Styling */
+.section { padding: 80px 0; }
+.section-head { text-align: center; margin-bottom: 50px; }
+.section-head h2 { font-size: 2.5rem; margin-bottom: 10px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+.glass { background: var(--glass); border: 1px solid var(--border); border-radius: 20px; backdrop-filter: blur(5px); }
+
+/* Project Cards */
+.project-card { overflow: hidden; transition: 0.3s; }
+.project-card img { width: 100%; height: auto; object-fit: cover; }
+.p-content { padding: 1.5rem; }
+.btn-link { color: var(--primary); text-decoration: none; font-weight: bold; margin-top: 10px; display: block; }
+
+/* Stats Bar */
+.stats-bar { background: var(--card-bg); text-align: center; }
+.stat-number { font-size: 2.5rem; font-weight: 800; color: var(--primary); display: block; }
+.hero2 { height: 40vmax; width: auto;}
+
+/* Mobil Ayar */
+@media (max-width: 992px) {
+    /* Resim alanını tamamen yok et */
+    .hero2 {
+        display: none;
+    }
+}
