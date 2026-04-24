@@ -16,7 +16,7 @@ Siteyi veya kodlarını kullanan herkes aşağıdaki atıf bildirisini **görün
 - Atıf, türevlerde ve dağıtımlarda da korunmalıdır.
 
 ## 3. Roblox İçerikleri
-Sitede gösterilen Roblox’a ait görseller, ekran görüntüleri veya diğer materyaller **Ekip Adı tarafından oluşturulmamış veya sahiplenilmemiştir** ve bu lisans kapsamına **dahil değildir**.  
+Sitede gösterilen Roblox’a ait görseller, ekran görüntüleri veya diğer materyaller **TAS Studios tarafından oluşturulmamış veya sahiplenilmemiştir** ve bu lisans kapsamına **dahil değildir**.  
 - Bu materyallerin tüm hakları ilgili sahiplerine aittir.  
 - Kullanıcılar, bu materyalleri kullanırken veya paylaşırken Roblox’un Kullanım Şartlarına uymalıdır.
 
