@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAS Studios | Geleceği İnşa Ediyoruz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">TAS SİTESİ BAŞLATILIYOR...</div>
+    </div>
+
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <div class="cyber-grid"></div>
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <header class="site-header">
+        <div class="container nav glass-panel">
+            <a class="brand" href="#">
+                <div class="logo-placeholder">
+                    <span class="logo-text">TAS</span>
+                </div>
+                <span class="brand-text">Studios</span>
+            </a>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger"><i class="bi bi-list"></i></label>
+            
+            <nav class="menu">
+                <a href="#hakkimizda" class="hover-underline">Hakkımızda</a>
+                <a href="#projeler" class="hover-underline">Oyunlar</a>
+                <a href="#ekip" class="hover-underline">Ekip</a>
+                <a href="#istatistik" class="hover-underline">İstatistikler</a>
+                <a class="btn nav-cta neon-border" href="https://discord.gg/ZMegNrnuF">Discord'a Katıl</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero reveal">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <div class="a">
+                        <span class="eyebrow"><i class="bi bi-rocket-takeoff-fill"></i> Roblox Türkiye'nin Zirvesi</span>
+                    </div>
+                    <h1 class="title glitch-effect" data-text="Hayalleri">
+                        <span class="grad-text">Hayalleri</span><br>Kodlara Dönüştürüyoruz.
+                    </h1>
+                    <p class="lead typewriter">TAS Studios, oyuncu topluluğunu merkeze alan, yüksek kaliteli ve sürükleyici Roblox deneyimleri geliştiren öncü bir topluluktur.</p>
+                    <div class="cta">
+                        <a class="btn primary glow-btn" href="#projeler">
+                            <span>Oyunlarımızı Gör</span> <i class="bi bi-arrow-right-short"></i>
+                        </a>
+                        <a class="btn ghost" href="#hakkimizda">Daha Fazla Bilgi</a>
+                    </div>
+                </div>
+                <div class="b">
+                    <div class="a">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <img class="hero2" src="Hero.png" alt="TAS Studios Hero" onerror="this.src='https://images.unsplash.com/photo-1614729939124-03290b56c9ce?auto=format&fit=crop&w=800&q=80'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="istatistik" class="section stats-bar reveal">
+            <div class="container grid">
+                <div class="stat-item glass-card interactive-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="stat-icon"><i class="bi bi-people"></i></div>
+                        <span class="stat-number"><span id="roblox-grup" class="counter" data-target="355">0</span>+</span>
+                        <p>Toplam Üye</p>
+                    </div>
+                </div>
+                <div class="stat-item glass-card interactive-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="stat-icon"><i class="bi bi-controller"></i></div>
+                        <span class="stat-number"><span id="roblox-ziyaret" class="counter" data-target="10000">0</span>+</span>
+                        <p>Toplam Ziyaret</p>
+                    </div>
+                </div>
+                <div class="stat-item glass-card interactive-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="stat-icon"><i class="bi bi-code-slash"></i></div>
+                        <span class="stat-number"><span class="counter" data-target="2">0</span>+</span>
+                        <p>Aktif Proje</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hakkimizda" class="section reveal">
+            <div class="container">
+                <div class="about-wrapper glass-card interactive-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content about-inner">
+                        <div class="about-text">
+                            <span class="eyebrow neon-text">BİZ KİMİZ?</span>
+                            <h2>Sanal Dünyalarda <br><span class="grad-text">Gerçek İzler</span> Bırakıyoruz.</h2>
+                            <p class="lead">TAS Studios, Roblox platformunun sınırlarını zorlayan bir geliştirici topluluğudur. Amacımız sadece oyun yapmak değil; oyuncuların içinde kaybolacağı, arkadaşlıklar kuracağı yaşayan dünyalar inşa etmektir.</p>
+                            
+                            <div class="features-list">
+                                <div class="feature-item glass-panel">
+                                    <div class="f-icon"><i class="bi bi-cpu-fill"></i></div>
+                                    <div>
+                                        <strong>Sürükleyici Oynanış</strong>
+                                        <p>Detaylı mekanikler ve optimize sistemler.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item glass-panel">
+                                    <div class="f-icon"><i class="bi bi-globe-americas"></i></div>
+                                    <div>
+                                        <strong>Topluluk Odaklı</strong>
+                                        <p>Geri bildirimlerle şekillenen güncellemeler.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projeler" class="section reveal">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow neon-text">PORTFÖY</span>
+                    <h2>Mevcut <span class="grad-text">Oyunlarımız</span></h2>
+                    <p class="muted">Her gün onlarca kişi tarafından oynanan şaheserlerimiz.</p>
+                </div>
+                <div class="grid projects">
+                    <div class="project-card glass-card interactive-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-img-wrapper">
+                                <img src="OyunLogo.jpg" alt="Oyun" onerror="this.src='https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80'">
+                                <div class="status-badge"><span class="pulse-dot"></span> Yayında</div>
+                            </div>
+                            <div class="p-content">
+                                <h3>TAS | Türk Asker Oyunu v2.5</h3>
+                                <p>Taktiksel derinlik, gerçekçi balistik ve sarsılmaz bir roleplay deneyimi.</p>
+                                <a href="https://www.roblox.com/tr/games/103515709235530/TAS-T-rk-Asker-Oyunu-V2-5-RP?gameSearchSessionInfo=db35ca8c-d2d4-4936-8fe9-0a35f93e779f&isAd=false&nativeAdData=&numberOfLoadedTiles=40&page=searchPage&placeId=103515709235530&position=5&universeId=9723431902" class="btn-link">İncele <i class="bi bi-box-arrow-in-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ekip" class="section reveal">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow neon-text">Geliştiriciler</span>
+                    <h2>Çekirdek <span class="grad-text">Kadro</span></h2>
+                    <p class="muted">Bu dünyaları inşa eden yetenekli geliştiricilerimiz.</p>
+                </div>
+                
+                <div class="grid team-grid">
+                    <div class="team-card glass-card interactive-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="member-img">
+                                <div class="img-ring"></div>
+                                <img src="Kurucu.webp" alt="Yavuzselim098340" onerror="this.src='https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=300&q=80'">
+                            </div>
+                            <div class="member-info">
+                                <h3>Yavuzselim098340</h3>
+                                <span class="role grad-text">Kurucu & Teknik Lider</span>
+                                <div class="socials">
+                                    <a href="https://discordapp.com/users/1124748161882279976" class="social-btn"><i class="bi bi-discord"></i></a>
+                                    <a href="https://www.roblox.com/tr/users/4767140829/profile" class="social-btn"><i class="bi bi-person-bounding-box"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card glass-card interactive-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="member-img">
+                                <div class="img-ring"></div>
+                                <img src="Website_Developer.webp" alt="ItsTime61" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&q=80'">
+                            </div>
+                            <div class="member-info">
+                                <h3>ItsTime61</h3>
+                                <span class="role">Web Geliştirici & Kalite Güvence Denetimcisi</span>
+                                <div class="socials">
+                                    <a href="https://www.roblox.com/tr/users/4942414138/profile" class="social-btn"><i class="bi bi-person-bounding-box"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  <div class="team-card glass-card interactive-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="member-img">
+                                <div class="img-ring"></div>
+                                <img src="AntiCheat_Developer.webp" alt="Musayev611" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&q=80'">
+                            </div>
+                            <div class="member-info">
+                                <h3>RobloxBrawler12</h3>
+                                <span class="role">Hile Önleme Geliştiricisi</span>
+                                <div class="socials">
+                                    <a href="https://www.roblox.com/tr/users/1231220370/profile" class="social-btn"><i class="bi bi-person-bounding-box"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card glass-card interactive-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="member-img">
+                                <div class="img-ring"></div>
+                                <img src="Administator.webp" alt="Trablus765" onerror="this.src='https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=300&q=80'">
+                            </div>
+                            <div class="member-info">
+                                <h3>Trablus765</h3>
+                                <span class="role">Sistem Yöneticisi</span>
+                                <div class="socials">
+                                    <a href="https://www.roblox.com/tr/users/4170275576/profile" class="social-btn"><i class="bi bi-person-bounding-box"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div class="team-card glass-card interactive-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="member-img">
+                                <div class="img-ring"></div>
+                                <img src="Administator2.webp" alt="Pkfoel" onerror="this.src='https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=300&q=80'">
+                            </div>
+                           <div class="member-info">
+                                <h3>Pkfoel</h3>
+                                <span class="role">Sistem Yöneticisi</span>
+                                <div class="socials">
+                                    <a href="https://www.roblox.com/tr/users/5658222436/profile" class="social-btn"><i class="bi bi-person-bounding-box"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div class="team-card glass-card interactive-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="member-img">
+                                <div class="img-ring"></div>
+                                <img src="Administator3.webp" alt="Amasalokojet92" onerror="this.src='https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=300&q=80'">
+                            </div>
+                            <div class="member-info">
+                                <h3>Amasalokojet92</h3>
+                                <span class="role">Sistem Yöneticisi</span>
+                                <div class="socials">
+                                    <a href="https://www.roblox.com/tr/users/10098296951/profile" class="social-btn"><i class="bi bi-person-bounding-box"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card glass-card interactive-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="member-img">
+                                <div class="img-ring"></div>
+                                <img src="Administator5.webp" alt="Musayev611" onerror="this.src='https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=300&q=80'">
+                            </div>
+                            <div class="member-info">
+                                <h3>Musayev611</h3>
+                                <span class="role">Sistem Yöneticisi</span>
+                                <div class="socials">
+                                    <a href="https://www.roblox.com/tr/users/8737196023/profile" class="social-btn"><i class="bi bi-person-bounding-box"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card glass-card interactive-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="member-img">
+                                <div class="img-ring"></div>
+                                <img src="Administator6.webp" alt="Berkby8" onerror="this.src='https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=300&q=80'">
+                            </div>
+                            <div class="member-info">
+                                <h3>Berkby8</h3>
+                                <span class="role">Sistem Yöneticisi</span>
+                                <div class="socials">
+                                    <a href="https://www.roblox.com/tr/users/10148868561/profile" class="social-btn"><i class="bi bi-person-bounding-box"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card glass-card interactive-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="member-img">
+                                <div class="img-ring"></div>
+                                <img src="Administator7.webp" alt="Skeletonbob12312" onerror="this.src='https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=300&q=80'">
+                            </div>
+                            <div class="member-info">
+                                <h3>Skeletonbob12312</h3>
+                                <span class="role">Sistem Yöneticisi</span>
+                                <div class="socials">
+                                    <a href="https://www.roblox.com/tr/users/4358617815/profile#!/about" class="social-btn"><i class="bi bi-person-bounding-box"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card glass-card interactive-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="member-img">
+                                <div class="img-ring"></div>
+                                <img src="Administator8.webp" alt="Cedric_3160" onerror="this.src='https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=300&q=80'">
+                            </div>
+                            <div class="member-info">
+                                <h3>Cedric_3160</h3>
+                                <span class="role">Sistem Yöneticisi</span>
+                                <div class="socials">
+                                    <a href="https://www.roblox.com/tr/users/10797050844/profile" class="social-btn"><i class="bi bi-person-bounding-box"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card glass-card interactive-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="member-img">
+                                <div class="img-ring"></div>
+                                <img src="Administator9.webp" alt="Akcem0" onerror="this.src='https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=300&q=80'">
+                            </div>
+                            <div class="member-info">
+                                <h3>Akcem0</h3>
+                                <span class="role">Sistem Yöneticisi</span>
+                                <div class="socials">
+                                    <a href="https://www.roblox.com/tr/users/5638625270/profile" class="social-btn"><i class="bi bi-person-bounding-box"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div class="team-card glass-card interactive-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="member-img">
+                                <div class="img-ring"></div>
+                                <img src="Administator4.webp" alt="Batuhanpro7878" onerror="this.src='https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80'">
+                            </div>
+                            <div class="member-info">
+                                <h3>Batuhanpro7878</h3>
+                                <span class="role">Sistem Yöneticisi</span>
+                                <div class="socials">
+                                    <a href="https://www.roblox.com/tr/users/1538334206/profile" class="social-btn"><i class="bi bi-person-bounding-box"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer glass-panel reveal">
+        <div class="container">
+            <div class="footer-content">
+                <div class="brand">
+                    <div class="logo-placeholder"><span class="logo-text">TAS</span></div>
+                    <span class="brand-text">Studios</span>
+                </div>
+                <p>© 2026 TAS Studios. Licensed under Apache License.</p>
+                <div class="footer-links">
+                    <a href="#" class="hover-underline">Lisans</a>
+                    <a href="#" class="hover-underline">Şartlar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+        <script>
+        // --- YENİ EKLENEN: ROBLOX VERİLERİNİ ÇEKME ---
+        async function fetchRobloxStats() {
+            // BURAYA KENDİ ID'LERİNİ GİRMELİSİN
+            const groupId = '341712681'; // Grubunun ID'si
+            const universeId = '9723431902'; // Oyununun Universe ID'si
+
+            try {
+                // 1. Grup Üye Sayısını Çek
+                const groupRes = await fetch(`https://groups.roproxy.com/v1/groups/${groupId}`);
+                const groupData = await groupRes.json();
+                if (groupData.memberCount) {
+                    document.getElementById('roblox-grup').setAttribute('data-target', groupData.memberCount);
+                }
+
+                // 2. Oyun Ziyaretçi Sayısını Çek
+                const gameRes = await fetch(`https://games.roproxy.com/v1/games?universeIds=${universeId}`);
+                const gameData = await gameRes.json();
+                if (gameData.data && gameData.data.length > 0) {
+                    document.getElementById('roblox-ziyaret').setAttribute('data-target', gameData.data[0].visits);
+                }
+            } catch (error) {
+                console.error("Roblox istatistikleri çekilemedi, varsayılan sayılar kullanılacak:", error);
+            }
+        }
+
+        // Sayfa açılır açılmaz verileri çekmeye başla
+        fetchRobloxStats();
+        // ----------------------------------------------
+
+
+        // 1. Preloader (Açılış Ekranı)
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                setTimeout(() => preloader.style.display = 'none', 500);
+            }, 1000);
+        });
+
+        // 2. Özel İmleç (Custom Cursor)
+        const cursorDot = document.getElementById('cursor-dot');
+        const cursorOutline = document.getElementById('cursor-outline');
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+            // Gecikmeli takip eden dış halka
+            cursorOutline.animate({ left: `${posX}px`, top: `${posY}px` }, { duration: 500, fill: "forwards" });
+        });
+
+        // 3. İnteraktif Kart İçi Fare Işığı (Glow Effect)
+        document.querySelectorAll('.interactive-card').forEach(card => {
+            card.onmousemove = e => {
+                const rect = card.getBoundingClientRect(),
+                      x = e.clientX - rect.left,
+                      y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            };
+        });
+
+        // 4. Scroll Reveal (Aşağı İndikçe Elemanların Belirmesi)
+        const reveals = document.querySelectorAll('.reveal');
+        const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+        const revealObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('active');
+                
+                // 5. Dinamik Numara Sayacı (Sadece ekranda görününce çalışır)
+                const counters = entry.target.querySelectorAll('.counter');
+                counters.forEach(counter => {
+                    // Sayacı çalıştırmadan hemen önce data-target'ı okuduğu için
+                    // Eğer Roblox verisi çekildiyse güncel sayıyı okur!
+                    const target = +counter.getAttribute('data-target');
+                    const duration = 2000; // 2 saniye
+                    const increment = target / (duration / 16); // 60fps
+                    let current = 0;
+                    
+                    const updateCounter = () => {
+                        current += increment;
+                        if (current < target) {
+                            counter.innerText = Math.ceil(current).toLocaleString('tr-TR');
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.innerText = target.toLocaleString('tr-TR');
+                        }
+                    };
+                    updateCounter();
+                    counter.classList.remove('counter'); // Bir kere çalışsın
+                });
+
+                observer.unobserve(entry.target);
+            });
+        }, revealOptions);
+
+        reveals.forEach(reveal => revealObserver.observe(reveal));
+    </script>
+    
+</body>
+</html>
